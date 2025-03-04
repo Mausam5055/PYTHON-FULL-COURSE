@@ -1,0 +1,1 @@
+print("The factorial of the number is:{factorial(n)})

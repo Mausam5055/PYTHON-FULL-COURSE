@@ -1,0 +1,46 @@
+from scipy import constants as c
+print(c.gram)        #0.001
+print(c.metric_ton)  #1000.0
+print(c.grain)       #6.479891e-05
+print(c.lb)          #0.45359236999999997
+print(c.pound)       #0.45359236999999997
+print(c.oz)          #0.028349523124999998
+print(c.ounce)       #0.028349523124999998
+print(c.stone)       #6.3502931799999995
+print(c.long_ton)    #1016.0469088
+print(c.short_ton)   #907.1847399999999
+print(c.troy_ounce)  #0.031103476799999998
+print(c.troy_pound)  #0.37324172159999996
+print(c.carat)       #0.0002
+print(c.atomic_mass) #1.66053904e-27
+print(c.m_u)         #1.66053904e-27
+print(c.u)           #1.66053904e-27
+print(c.pi)
+print(c.m_u)
+print(c.yotta)    #1e+24
+print(c.zetta)    #1e+21
+print(c.exa)      #1e+18
+print(c.peta)     #1000000000000000.0
+print(c.tera)     #1000000000000.0
+print(c.giga)     #1000000000.0
+print(c.mega)     #1000000.0
+print(c.kilo)     #1000.0
+print(c.hecto)    #100.0
+print(c.deka)     #10.0
+print(c.deci)     #0.1
+print(c.centi)    #0.01
+print(c.milli)    #0.001
+print(c.micro)    #1e-06
+print(c.nano)     #1e-09
+print(c.pico)     #1e-12
+print(c.femto)    #1e-15
+print(c.atto)     #1e-18
+print(c.zepto)    #1e-21
+print(c.kibi)    #1024
+print(c.mebi)    #1048576
+print(c.gibi)    #1073741824
+print(c.tebi)    #1099511627776
+print(c.pebi)    #1125899906842624
+print(c.exbi)    #1152921504606846976
+print(c.zebi)    #1180591620717411303424
+print(c.yobi)    #1208925819614629174706176

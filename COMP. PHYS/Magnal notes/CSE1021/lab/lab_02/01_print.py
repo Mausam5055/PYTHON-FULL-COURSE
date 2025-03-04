@@ -1,0 +1,12 @@
+num = int(input("Enter the number: "))
+amount = float(input("Enter the amount: "))
+value_pi = 22/7
+string = input("Enter the string: ")
+pop = int(input("Enter the population: "))
+message = input("Enter the message: ")
+print(num)
+print(amount)
+print(value_pi)
+print(string)
+print(pop)
+print(message)

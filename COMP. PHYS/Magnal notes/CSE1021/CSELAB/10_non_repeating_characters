@@ -1,0 +1,11 @@
+def find_repeating_characters():
+    s = input("Enter a string :")
+    f = ""
+    j = ""
+    for i in s:       
+        if i not in j:       # or you can use if i!=j
+            f=f+i
+            j=i
+                  
+    print(f)
+find_repeating_characters()

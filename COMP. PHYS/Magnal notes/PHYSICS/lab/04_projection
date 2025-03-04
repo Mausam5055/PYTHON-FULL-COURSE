@@ -1,0 +1,19 @@
+
+import numpy as np
+import math as m
+
+
+A=[2,-3,6]
+B=[1,2,2]
+res = np.dot(A,B)
+
+sum = 0
+
+for component in B:
+    sum += component**2
+
+mag = m.sqrt(sum)
+
+projection= res/mag
+
+print(projection)

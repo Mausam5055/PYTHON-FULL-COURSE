@@ -1,0 +1,110 @@
+# The syntax of the Flask module involves creating routes, 
+# handling requests, rendering templates, and managing application 
+# configurations. Here’s a breakdown of some essential Flask syntax:
+
+# 1. Importing Flask and Other Modules
+
+# from flask import Flask, request, render_template, redirect, url_for, 
+# jsonify, session
+
+# 2. Creating a Flask Application
+
+# app = Flask(__name__)
+# app = Flask(__name__): This creates an instance of the Flask class.
+#  The __name__ argument is the name of the current module, 
+# which Flask uses to determine the root path for various resources.
+
+# 3. Defining Routes
+# Routes are defined using decorators. A route is an endpoint in your 
+# web application that is associated with a URL.
+
+# @app.route('/')
+# def home():
+#     return "Welcome to the Home Page!"
+# @app.route('/about')
+# def about():
+#     return "This is the About Page."
+# @app.route('/'): The @app.route() decorator binds a function to a URL.
+# def home(): The function defined under the route handles the logic for
+#  that particular endpoint.
+
+# 4. Handling Different HTTP Methods
+# You can specify which HTTP methods are allowed for a route.
+
+# @app.route('/login', methods=['GET', 'POST'])
+# def login():
+#     if request.method == 'POST':
+#         # Handle POST request
+#         return "Login Successful!"
+#     else:
+#         # Handle GET request
+#         return render_template('login.html')
+# methods=['GET', 'POST']: Specifies that this route can handle both 
+# GET and POST requests.request.method: Checks the HTTP method used for 
+# the request.
+
+ #5. Rendering Templates
+# Flask uses the Jinja2 templating engine to dynamically generate 
+# HTML.
+
+# @app.route('/hello/<name>')
+# def hello(name):
+#     return render_template('hello.html', name=name)
+# render_template('hello.html', name=name): This renders the hello.html 
+# template and passes the name variable to it.
+
+# 6. Redirecting and URL Building
+# You can redirect users and build URLs dynamically.
+
+# @app.route('/redirect_example')
+# def redirect_example():
+#     return redirect(url_for('home'))
+# redirect(url_for('home')): Redirects the user to the home route.
+
+# 7. Handling JSON Responses
+# You can return JSON data using Flask.
+
+# @app.route('/api/data')
+# def get_data():
+#     data = {'key': 'value', 'foo': 'bar'}
+#     return jsonify(data)
+# jsonify(data): Converts the dictionary data into a JSON response.
+
+
+# 8. Managing Sessions
+# Flask allows you to manage user sessions using cookies.
+
+
+# app.secret_key = 'supersecretkey'
+
+# @app.route('/set_session')
+# def set_session():
+#     session['username'] = 'user1'
+#     return "Session set!"
+
+# @app.route('/get_session')
+# def get_session():
+#     username = session.get('username', 'Guest')
+#     return f"Hello, {username}!"
+# app.secret_key: A secret key is required to use sessions.
+# session['username']: Stores data in the session.
+# session.get('username', 'Guest'): Retrieves data from the session with 
+# a default value.
+
+# 9. Error Handling
+# You can create custom error pages.
+
+
+# @app.errorhandler(404)
+# def page_not_found(e):
+#     return render_template('404.html'), 404
+# @app.errorhandler(404): Decorator to define custom behavior for a 404 error (page not found).
+# render_template('404.html'): Renders a custom 404 error page.
+
+# 10. Running the Application
+# To run the Flask application:
+
+# if __name__ == '__main__':
+#     app.run(debug=True)
+# app.run(debug=True): Starts the Flask development server with debugging enabled. Debug mode reloads the server automatically when you make changes to the code.
+# This is a basic overview of Flask syntax. If you need more advanced examples or have specific questions, feel free to ask!
