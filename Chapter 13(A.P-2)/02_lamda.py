@@ -21,9 +21,8 @@ print(square(5))
 #output as n*n
 
 #the above code can be written in a different way using lamda function
-#as shown :
+#as shown in the next file:
 
-square = lamda x: x*x
-print(square(5))
+
 
 
