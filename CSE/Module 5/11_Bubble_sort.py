@@ -16,9 +16,10 @@ print(nums)
 # 1.i represents the number of passes we make through the list.
 # 2.It starts from len(nums) - 1 (last index) and goes down to 1, decreasing in 
 # each iteration.
-# 3.This ensures that after each pass, the largest remaining element is correctly placed at the end.
+# 3.This ensures that after each pass, the largest remaining element is 
+# correctly placed at the end.
 
-# Role of j (Inner Loop):
+#             Role of j (Inner Loop):
 # 1.j iterates through the unsorted part of the list.
 # 2.It starts from 0 and goes up to i - 1 (meaning it only goes through unsorted
 # elements).
