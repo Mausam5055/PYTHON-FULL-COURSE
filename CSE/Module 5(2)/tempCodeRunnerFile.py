@@ -1,0 +1,1 @@
+  print(type(list1[i]))  # Accessing data type of each element
