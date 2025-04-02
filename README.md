@@ -224,7 +224,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
   
+<<<<<<< HEAD
 Made with ❤️ by Mausam Kar
+=======
+Made with ❤️ by Mausam Kar
+>>>>>>> dd82a782b3f3213030c6eab0b2e457a99cdc1eb9
 
 </div>
 
