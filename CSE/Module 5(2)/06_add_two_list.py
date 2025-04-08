@@ -12,3 +12,7 @@ for i in range(len(list3)):
     for j in range(len(list3[i])):  
         print(list3[i][j], end=" ")
     print()
+
+# We’re looping over the structure of matrix n, but we are still 
+# accessing both n[i][j] and m[i][j] — so even though the loop runs 
+# based on n, the operation applies to both since both have same size

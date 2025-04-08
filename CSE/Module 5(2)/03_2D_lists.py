@@ -5,12 +5,13 @@ list2d = [
 ]
 
 # First loop: Printing each row of the 2D list
-for i in range(2):  # Loop through the two rows
+for i in range(len(list2d)):  # Loop through the two rows
     print(list2d[i])  # Prints the entire row (sub-list)
 
 # Second loop: Accessing and printing each element individually
-for i in range(2):  # Loop through rows
-    for j in range(3):  # Loop through columns (each row has 3 elements)
+for i in range(len(list2d)): #Loop through rows
+    for j in range(len(list2d[i])):  # ✅ This gives number of columns in row i
+  # Loop through columns (each row has 3 elements)
         print(list2d[i][j])  # Prints each element separately on a new line
 
 # Third loop: Printing each row's elements in the same line

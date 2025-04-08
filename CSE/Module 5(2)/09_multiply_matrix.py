@@ -9,8 +9,8 @@ if n != p:
     print("Multiplication not possible...")
 else:
     # Initializing matrices
-    a = [[0 for _ in range(n)] for _ in range(m)]
-    b = [[0 for _ in range(q)] for _ in range(p)]
+    a = [[0 for _ in range(n)] for _ in range(m)]  # 1st matrix/nested list
+    b = [[0 for _ in range(q)] for _ in range(p)]  # 2nd matrix
     c = [[0 for _ in range(q)] for _ in range(m)]  # Resultant matrix
 
     # Input for 1st matrix
@@ -34,14 +34,35 @@ else:
     # Printing 1st matrix
     print("\nFirst Matrix:")
     for row in a:
-        print(" ".join(map(str, row)))
+        for num in row:
+            print(num, end=" ")
+        print()
 
     # Printing 2nd matrix
     print("\nSecond Matrix:")
     for row in b:
-        print(" ".join(map(str, row)))
+        for num in row:
+            print(num, end=" ")
+        print()
 
     # Printing Resultant matrix
     print("\nResultant Matrix (Multiplication):")
     for row in c:
-        print(" ".join(map(str, row)))
+        for num in row:
+            print(num, end=" ")
+        print()
+
+
+#         🤔 So... Why i+1 and not just i?
+# Python uses 0-based indexing, meaning:
+
+# The first row is i = 0
+
+# The first column is j = 0
+
+# But in real-world terms, when a person is entering values, it's more natural to think:
+
+# "I'm entering value for row 1, column 1" — not row 0, column 0.
+
+# 🎯 Purpose of i+1 and j+1:
+# It makes the user experience clearer when you're asking for input.
