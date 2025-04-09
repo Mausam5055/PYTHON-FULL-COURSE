@@ -5,7 +5,6 @@ print(max(s1))
 print(min(s1)) # 5
 print(sum(s1)) # 45
 print(sorted(s1)) # [5, 6, 7, 8, 9, 10]
-
 print(s1.union(s2)) # {5, 6, 7, 8, 9, 10}
 print(s1.intersection(s2)) # {5, 6, 7, 8, 9, 10}        
 print(s1.difference(s2)) # set()
