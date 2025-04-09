@@ -21,3 +21,7 @@ def binary_search(array, n, min, max):
 
 # Call the binary search function
 binary_search(array1, n, min, max)
+
+# In Binary Search, you search between the min and max indexes. 
+# You keep narrowing down the range.
+# ✅ If min <= max, there is still something left to search.
