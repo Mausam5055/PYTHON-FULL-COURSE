@@ -7,7 +7,7 @@
 # printing it.
 
 def greeting():
-    return "Hello, have a great day!"  # Returns a message
+       return "Hello, have a great day!"  # Returns a message
 
 print(greeting())  # Calls the function and prints the result
 
