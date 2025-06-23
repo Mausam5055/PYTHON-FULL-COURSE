@@ -1,6 +1,7 @@
 #write a function using python that accepts a 2 digit number as a 
 # parameter and return text in words(Basic)
 
+n = int(input("Enter a number: "))
 def num_to_word(n):
     for a in str(n):
         if a == "1":
@@ -25,7 +26,7 @@ def num_to_word(n):
             print("zero", end=" ")
     print("")  # Print a newline after the number words
 
-num_to_word(int(input("Enter a number: ")))
+num_to_word(n)
 
 
 

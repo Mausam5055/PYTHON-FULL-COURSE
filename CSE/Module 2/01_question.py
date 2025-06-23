@@ -2,11 +2,11 @@
 # the function should have one argument and return factorial value
 
 def factorial(n):
-    fact = 1
-    for i in range(2, n + 1):
-        fact *= i
-    return fact
+    f = 1
+    for i in range(1, n + 1):
+        f *= i
+    return f
 
-num = int(input("Enter a number: "))
-print("Factorial:", factorial(num))
+a = int(input("Enter a number: "))
+print("Factorial:", factorial(a))
 

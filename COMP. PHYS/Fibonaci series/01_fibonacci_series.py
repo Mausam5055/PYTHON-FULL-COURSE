@@ -5,16 +5,19 @@
 # Formula:
 # F(n)=F(n−1)+F(n−2)
 
-import numpy as np
-n = int(input("Enter Number Of terms:"))
-fib = np.zeros(n)  # Create an array of size 'n' initialized with zeros
-if n > 0:
-    fib[0] = 0  # First Fibonacci number in the array
-if n > 1:
-    fib[1] = 1  # Second Fibonacci number in the array
-for n in range(2, n):  # Loop from index 2 to (n-1)
-    fib[n] = fib[n - 1] + fib[n - 2]  # Sum of previous two numbers
-print(fib)  # Print the final Fibonacci series
+
+n = int(input("enter the number of terms to be printed:"))
+
+f1 = 0
+f2 = 1
+
+print("The fibonacci series for ", n , " terms are: ")
+print(f1)
+for i in range(n-1):
+    print(f2)  # we put the print in loop so all the values are printed one after another 
+    next_term = f1 + f2
+    f1 = f2
+    f2  = next_term
 
 # What is np.zeros()?
 # np.zeros() is a NumPy function that creates an array of a 

@@ -5,8 +5,8 @@ list3 = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
 # Input for matrix n
 print("Enter numbers for Matrix n:")
-for i in range(3):
-    for j in range(3):
+for i in range(len(n)):
+    for j in range(len(n[i])):
         n[i][j] = int(input(f"Enter number for n[{i+1}][{j+1}]: "))
 
 # Input for matrix m

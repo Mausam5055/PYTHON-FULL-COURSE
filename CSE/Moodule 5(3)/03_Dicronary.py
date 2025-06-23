@@ -25,7 +25,7 @@ my_dict.clear()                      # Empties the dictionary
 
 #dictonary Methods :
 
-my_dict.keys()       # Returns all keys
+my_dict.keys()      # Returns all keys
 my_dict.values()     # Returns all values
 my_dict.items()      # Returns all key-value pairs
 

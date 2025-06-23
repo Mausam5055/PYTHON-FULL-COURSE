@@ -1,21 +1,43 @@
-def prime_factors(n):
-    i = 2  # Start with the smallest prime number (2)
-    while n > 1:  # Continue until n becomes 1
-        if n % i == 0:  # If 'i' divides 'n' completely
-            print(i, end=" ")  # Print the prime factor
-            n = n // i  # Divide 'n' by 'i' to remove that factor
-        else:
-            i = i + 1  # Move to the next number
+# #check if a number is prime or not:(number divdible by 1 and itslf)
 
-# Example run
-n = int(input("Enter a number: "))  
-print("Prime Factors:", end=" ")
-prime_factors(n)
+# #Using For Loop : 
+# n = int(input("Enter The Number: "))
+# factors_of_n = 0  #Initial Counter for factors
+
+# for i in range(1, n + 1):  # Loop from 1 to n
+#     if n % i == 0:  #Check divisibility
+#         factors_of_n = factors_of_n +1  #increment condition of the loop
+
+# # A prime number has exactly 2 factors: 1 and itself
+# if factors_of_n == 2:
+#     print("The Number Is Prime")
+# else:
+#     print("The Number Is Not Prime")
+
+# #Using while loop :
+
+# n = int(input("Enter The Number: "))
+# i = 1  # Start from 1
+# c = 0  # Counter for factors
+
+# while i <= n:
+#     if n % i == 0:  # Check divisibility
+#         c += 1
+#     i += 1  # Increase i
+
+# # A prime number has exactly 2 factors: 1 and itself
+# if c == 2:
+#     print("The Number Is Prime")
+# else:
+#     print("The Number Is Not Prime")
 
 
-# How It Works:
-#1. Start with i = 2 (smallest prime number).
-#2. Check if i divides n completely:
-#3. If yes, print i, divide n by i, and continue checking.
-#4. If no, move to the next number i + 1.
-#5. Repeat until n becomes 1.
+n = int(input("Enter the number:"))
+factors_of_n =  0
+for i in range(1,n+1):
+       if n%i == 0:
+        factors_of_n = factors_of_n+1
+if factors_of_n == 2:
+    print("The Number Is A prime Number") 
+else :
+    print("The Number is Not a prime Number")

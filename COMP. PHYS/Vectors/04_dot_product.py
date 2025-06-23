@@ -2,7 +2,7 @@ import numpy as np
 # Define two vectors
 A = np . array ([1 , 2 , 3])
 B = np . array ([4 , 5 , 6])
-# Calculate dot product
+# Calculate dot product:
 dot_product = np . dot (A , B )
 # Calculate magnitudes of the vectors
 magnitude_A = np . linalg . norm ( A )

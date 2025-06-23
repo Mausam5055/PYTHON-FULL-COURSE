@@ -7,13 +7,13 @@ print('The count of p is:', count)
 
 # FINDING THE MAXIMUM NUMBER IN A SET(M1)
 # Initialize array
-arr = [25, 11, 7, 75, 56]
+arr = [25, 11, 7, 75, 56,100]
 
 # Initialize max with first element of array
 max_num = arr[0]  # renamed from 'max' to avoid built-in function conflict
 
 # Loop through the array
-for i in range(0, len(arr)):
+for i in range(len(arr)):
     # Compare elements of array with max
     if arr[i] > max_num:
         max_num = arr[i]
