@@ -1,3 +1,5 @@
+#Find !st largest elemnt from a given number :
+
 n = input("enter any number:")
 list1 = []
 for i in n :
@@ -8,3 +10,6 @@ sorted_list = list(set(list1))
 sorted_list.sort(reverse=True)
 print(sorted_list[0])
 
+# or
+#  sorted_list.sort
+# print(sorted_list[-1])
