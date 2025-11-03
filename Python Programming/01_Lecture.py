@@ -1,0 +1,23 @@
+a = 10
+b = 5
+print("Sum:", a + b)
+print("Difference:", a - b)
+print("Product:", a * b)
+print("Quotient:", a / b)
+print("Remainder:", a % b)  
+print("Exponentiation:", a ** b)    
+print("Floor Division:", a // b)
+print("Increment a:", a + 1)
+print("Decrement b:", b - 1)
+print("Negation of a:", -a)
+print("Negation of b:", -b)
+print("Absolute value of -a:", abs(-a))
+print("Absolute value of -b:", abs(-b))
+print("a raised to the power of b:", pow(a, b))
+print("Maximum of a and b:", max(a, b))
+print("Minimum of a and b:", min(a, b))
+print("Square root of a:", a ** 0.5)
+print("Square root of b:", b ** 0.5)
+print("a modulo b:", a % b)
+print("b modulo a:", b % a)
+
