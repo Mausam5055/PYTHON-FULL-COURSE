@@ -1,3 +1,7 @@
+                    # SUBMITTED BY: Mausam Kar 
+                    # REG NO: 24BAI10284
+                    # DATE: 12-03-2024
+
 # Assignment Problems
 # 1. Write a program to input a string and check whether it is palindrome string or not
 # 2. Write a Program to input a sentence and find number of alphabets, digits and special symbols in
