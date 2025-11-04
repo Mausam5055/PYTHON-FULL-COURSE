@@ -1,3 +1,8 @@
+                    # SUBMITTED BY: Mausam Kar 
+                    # REG NO: 24BAI10284
+                    # DATE: 13-03-2024
+
+
 # Assignment questions.
 # Q.1. Write a program to perform addition of two matrices.
 # a=[[1,2,3],[4,5,6],[7,8,9]] b=[[4,5,6],[7,8,9],[1,2,3]]
