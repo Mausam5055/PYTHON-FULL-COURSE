@@ -7,17 +7,18 @@ for i in range(1, n + 1):
 print("The factorial of", n, "is", factorial)
 
 
-#Write a program to check whether a number is prime or not
 num = int(input("Enter a number: "))
-if num > 1:
+
+# 0 and 1 are not prime numbers
+if num <= 1:
+    print(num, "is not a prime number")
+else:
     for i in range(2, int(num/2) + 1):
-        if (num % i) == 0:
+        if num % i == 0:
             print(num, "is not a prime number")
             break
     else:
         print(num, "is a prime number")
-else:
-    print(num, "is not a prime number")
 
 #Write a program to print multiplication table of a number using for loop
 num = int(input("Enter a number to print its multiplication table: "))

@@ -14,8 +14,7 @@ d["Gender"]="Male"
 print ("dictionary d=",d)
 del(d["Regd.No"])
 print("dictionary d=",d)
-print("\"Name\" in d=","Name"
-in d)
+print("\"Name\" in d=","Name"in d)
 c=d.copy()
 print("After copying dictionary d to c=",c)
 print("value of key Name=",d.get("Name"))

@@ -21,4 +21,5 @@ def check_odd_even():
 
 a = int(input("Enter a number: "))  # Takes input
 # Calling the function and printing the result
-print(check_odd_even())
+result=check_odd_even()
+print(result)

@@ -5,14 +5,14 @@
 
 
 #  1. Factorial using Function
-def fact(n):
+def fact():
     f = 1
     for i in range(1, n + 1):
         f = f * i
     return f
 
 n = int(input("Enter a number: "))
-print("Factorial =", fact(n))
+print("Factorial =", fact())
 
 
 #  2. Area of Circle using Function (default pi=3.14, radius=1)

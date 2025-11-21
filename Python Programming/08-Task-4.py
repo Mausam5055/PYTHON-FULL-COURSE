@@ -52,8 +52,8 @@ t = input("\nEnter another string: ")
 print("(n) Total characters:", len(t))
 print("(o) Repeated 10 times:", t * 10)
 print("(p) First character:", t[0] if t else "Empty")
-print("(q) First 3 characters:", t[:3])
-print("(r) Last 3 characters:", t[-3:])
+print("(q) First 3 characters:", t[0:3])
+print("(r) Last 3 characters:", t[-3:-1])
 print("(s) Reversed:", t[::-1])
 
 if len(t) >= 7:
