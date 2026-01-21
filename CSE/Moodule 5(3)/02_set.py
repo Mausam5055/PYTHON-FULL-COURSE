@@ -15,3 +15,7 @@ print(s1.pop()) # 5 (removes and returns an arbitrary element from the set)
 print(s1) # {6, 7, 8, 9, 10}
 print(s1.clear()) # None (removes all elements from the set)
 print(s1) # set()                                                                                     
+s1.remove(9) 
+print(s1)
+s1.add(9)
+print(s1)
